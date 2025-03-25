@@ -2,7 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const path = require('path');
 const app = express();
-const port = 8080;
+const port = 10000;
 const { v4: uuidv4 } = require('uuid');
 const methodOverride = require('method-override');
 
@@ -909,6 +909,6 @@ app.post('/search', (req, res) => {
     let posts = post.filter((p) => p.username.toLowerCase().includes(search.toLowerCase()));
     res.render('index.ejs', { post: posts });
 });
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
