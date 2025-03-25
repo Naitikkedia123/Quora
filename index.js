@@ -910,5 +910,5 @@ app.post('/search', (req, res) => {
     res.render('index.ejs', { post: posts });
 });
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
