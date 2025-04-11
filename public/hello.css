@@ -528,11 +528,22 @@ body {
         flex: 1 1 45%;
         font-weight: bold;
     }
-
-    .logout-btn {
-        background-color: #444;
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 30px; /* Adjust space between all items */
     }
-
+    .nav-right .add-question {
+        margin-left: -20px; /* or whatever size you want */
+    }
+    form button.logout-btn {
+        background-color: #444;
+        margin-left: -32px;
+    }
+    .user-name{
+        margin-left: -40px;
+        margin-right: 0px;
+    }
     /* Nav Icons */
     .nav-icons {
         width: 100%;
@@ -622,6 +633,15 @@ body {
     .logo {
     text-align: center;
     width: 100%;
-}
-
+    }
+    .container button{
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        background-color: #ff4b4b;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
 }
