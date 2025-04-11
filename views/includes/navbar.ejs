@@ -347,11 +347,22 @@
         flex: 1 1 45%;
         font-weight: bold;
     }
-
-    .logout-btn {
-        background-color: #444;
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 30px; /* Adjust space between all items */
     }
-
+    .nav-right .add-question {
+        margin-left: -20px; /* or whatever size you want */
+    }
+    form button.logout-btn {
+        background-color: #444;
+        margin-left: -32px;
+    }
+    .user-name{
+        margin-left: -40px;
+        margin-right: 0px;
+    }
     /* Nav Icons */
     .nav-icons {
         width: 100%;
@@ -400,6 +411,7 @@
     .sidebar {
         display: none;
     }
+
     .post {
         width: 90%;
         margin: 180px auto 10px;
